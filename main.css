@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Futura Std', sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.card{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.rpart{
+    /* --d: 1s; duration */
+
+/* display: grid; */
+overflow: hidden;
+-webkit-mask: linear-gradient(90deg,#0000,#000 2% 96%,#0000);
+}
+.rpart::-webkit-scrollbar{
+    display: none;
+    
+}
+
+.bt{
+    border-radius: 6px 6px 0px 6px;
+}
+.ct{
+    border-radius: 6px 0px 6px 6px;
+}
+.elem{
+    animation:15s infinite linear moveCompany;
+
+}
+
+@keyframes moveCompany{
+    0%{
+        left:0%;
+        
+    }
+    100%{
+        left:-50%;
+    }
+
+}
+
+.sbtn{
+    border-radius: 0px 50px 50px 50px;
+    border: 2px solid black;
+}
